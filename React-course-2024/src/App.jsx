@@ -14,8 +14,8 @@ function App() {
       <div>
       <h4>React concepts 2024</h4>
 {/* <FunctionalComponent /> */}
-{/* <ProductList listOfProduct={productData} name="Akhila" city="Trivandrum"/> */}
-<ClassBasedComponent/>
+<ProductList listOfProducts={productData} name="Akhila" city="Trivandrum"/>
+{/* <ClassBasedComponent/> */}
       </div>
      
   )
