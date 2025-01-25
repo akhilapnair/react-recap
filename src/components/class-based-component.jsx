@@ -14,6 +14,8 @@ class ClassBasedComponent extends Component {
       changeColor: !this.state.changeColor,
     });
   };
+  
+  
   componentDidMount() {
     this.setState({
       showText: !this.state.showText,
@@ -34,6 +36,13 @@ class ClassBasedComponent extends Component {
     }
 
   }
+
+  
+  
+  componentWillUnmount() {
+    console.log("component is getting unmounted");
+  }
+  
 
   handleCountClick = () => {
     this.setState({ ...this.state, count: this.state.count + 1 });
