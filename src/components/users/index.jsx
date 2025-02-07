@@ -25,13 +25,7 @@ export default function Users() {
     }
   }
 
-   //   function handleFetchListOfUsers() {
-  //     fetchAllUsers();
-  //   }
-
-  //   useEffect(() => {
-  //     fetchAllUsers();
-  //   }, []);
+   
 
 
   return (
