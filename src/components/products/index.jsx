@@ -8,6 +8,8 @@ function ProductList({ name, city, listOfProducts }) {
   const [flag, setFlag] = useState(initialState);
   const [count, setCount] = useState(0);
   const [changeStyle, setChangeStyle] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+
 
   function handleToggleText() {
     setFlag(!flag);
@@ -16,6 +18,7 @@ function ProductList({ name, city, listOfProducts }) {
   function handleIncreaseCount() {
     setCount(count + 1);
   }
+  
 
   useEffect(() => {
     setFlag(!flag);
