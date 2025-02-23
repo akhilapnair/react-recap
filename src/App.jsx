@@ -19,24 +19,21 @@ function App() {
   return (
     <div>
     <Navbar/>
-    <div>
+      <h4>React concepts 2024</h4>
+      <div>
+
     <Routes>
          {/* <Route path='/' element={<Users/> } /> */}
-         {/* <Route path='/user' element={<Users/>} /> */}
+         <Route path='/redux' element={ <CounterButton />} />
          <Route path="/users" element={<Users />} /> {/* Define the Users Route */}
-
-         {/* <Route path='/contact' element={<Contact/>} /> */}
+         <Route path='/about' element={<ProductList listOfProducts={productData} name="Akhila" city="Trivandrum"/> } />
        </Routes>
-      <h4>React concepts 2024</h4>
       {/* <FunctionalComponent /> */}
-      {/* <ProductList listOfProducts={productData} name="Akhila" city="Trivandrum"/> */}
       {/* <ClassBasedComponent/> */}
-      {/* <Users/> */}
       {/* <ContextTextComponent/>
       <ContextButtonComponent/> */}
-      <h4>Redux Toolkit</h4>
-      <CounterButton />
-      <CounterValue />
+     
+  
     </div>
     </div>
    
