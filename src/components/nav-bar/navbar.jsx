@@ -12,7 +12,7 @@ const Navbar = () => {
           <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/redux">Redux Toolkit</Link>
         </li>
       </ul>
     </nav>

@@ -1,9 +1,9 @@
-
 import { useDispatch } from "react-redux";
 import { handleIncreaseCountAction } from "../../store/slices/counter";
+import CounterValue from "./counter-value";
 
 function CounterButton() {
-const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   function handleClick() {
     dispatch(
@@ -14,12 +14,18 @@ const dispatch = useDispatch();
     );
   }
   return (
-    <button
-      onClick={handleClick}
-      style={{ backgroundColor: "black", color: "white", fontWeight: "bold" }}
-    >
-      Increase Count
-    </button>
+    <div>
+            <h4>Redux Toolkit</h4>
+
+      <button
+        onClick={handleClick}
+        style={{ backgroundColor: "black", color: "white", fontWeight: "bold" }}
+      >
+        Increase Count
+      </button>
+
+      <CounterValue />
+    </div>
   );
 }
 
