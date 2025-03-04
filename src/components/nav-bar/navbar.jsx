@@ -14,6 +14,12 @@ const Navbar = () => {
         <li>
           <Link to="/redux">Redux Toolkit</Link>
         </li>
+        <li>
+          <Link to="/context">Context</Link>
+        </li>
+        <li>
+          <Link to="/products">Shopping Cart</Link>
+        </li>
       </ul>
     </nav>
   );
